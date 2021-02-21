@@ -19,8 +19,8 @@
                             <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="formAmount" wire:model="amount">
                            
                         <div class="mb-4">
-                            <label for="formType" class="block text-gray-700 text-sm font-bold mb-2">Type:</label>
-                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="formType" wire:model="type">
+                            <label for="formCategory" class="block text-gray-700 text-sm font-bold mb-2">Category:</label>
+                            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="formCategory" wire:model="category">
                             
                         </div>
                     </div>

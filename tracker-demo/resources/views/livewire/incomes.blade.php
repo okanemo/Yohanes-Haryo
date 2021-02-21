@@ -27,7 +27,7 @@
                     <tr class="bg-gray-100">
                         <th class="px-4 py-2">Description</th>
                         <th class="px-4 py-2">Amount</th>
-                        <th class="px-4 py-2">Type</th>
+                        <th class="px-4 py-2">Category</th>
                         <th class="px-4 py-2">Action</th>
                     </tr>
                 </thead>
@@ -36,7 +36,7 @@
                         <tr>
                             <td class="border px-4 py-2">{{ $row->description }}</td>
                             <td class="border px-4 py-2">{{ $row->amount }}</td>
-                            <td class="border px-4 py-2">{{ $row->type }}</td>
+                            <td class="border px-4 py-2">{{ $row->category }}</td>
                             <td class="border px-4 py-2">
                                 
                                 <button wire:click="delete({{ $row->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>

@@ -7,7 +7,7 @@ use App\Models\Income;
 
 class Incomes extends Component
 {
-    public $incomes, $description, $amount, $type;
+    public $incomes, $description, $amount, $category;
     public $isModal = 0;
 
   	//LOAD VIEW
@@ -54,13 +54,13 @@ class Incomes extends Component
         $this->validate([
             'description' => 'required|string',
             'amount' => 'required|string',
-            'type' => 'required|string',
+            'category' => 'required|string',
         ]);
 
         Income::updateOrCreate(['id' => $this->description], [
             'description' => $this->description,
             'amount' => $this->amount,
-            'typer' => $this->type,
+            'category' => $this->category,
             
         ]);
 
@@ -77,7 +77,7 @@ class Incomes extends Component
         //ASIGN BASED ON DATA
         $this->description = $incomes->description;
         $this->amount = $incomes->amount;
-        $this->type = $incomes->type;
+        $this->category = $incomes->category;
 
         $this->openModal(); //OPEN MODAL
     }

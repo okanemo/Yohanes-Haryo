@@ -17,7 +17,7 @@ class CreateIncomesTable extends Migration
             $table->id();
             $table->string('description');
             $table->string('amount');
-            $table->string('type');
+            $table->string('category');
             $table->timestamps();
         });
     }

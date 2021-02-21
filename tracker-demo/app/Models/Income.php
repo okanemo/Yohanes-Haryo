@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Income extends Model
 {
     use HasFactory;
-    protected $fillable=['description','amount','type'];
+    protected $fillable=['description','amount','category'];
 }
