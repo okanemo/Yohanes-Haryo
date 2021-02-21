@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Incomes; //Load class Members 
+use App\Http\Livewire\Expenses;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,6 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function() {
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('income', Incomes::class)->name('income'); //Tambahkan routing ini
+    Route::get('income', Incomes::class)->name('income'); 
+    Route::get('expense', Expenses::class)->name('expense');
 });
